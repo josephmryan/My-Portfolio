@@ -5,5 +5,5 @@ Link: https://josephmryan.github.io/My-Portfolio/
 
 Current Image
 
-https://github.com/josephmryan/My-Portfolio/assets/images/website-image.jpg?raw=true
+[!Current Image](images/website-image.jpg)
 
