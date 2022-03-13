@@ -5,4 +5,5 @@ Link: https://josephmryan.github.io/My-Portfolio/
 
 Current Image
 
-![Alt text](My-Portfolio/assets/images/website-image.jpg?raw=true "Current image")
+https://github.com/josephmryan/My-Portfolio/assets/images/website-image.jpg?raw=true
+
