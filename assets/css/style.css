@@ -7,6 +7,7 @@
     --primary-color: rgb(17, 16, 16);
     --secondary-color: #1f6b0c;
     --tertiary-color: #4fc05e;
+    --fourth-color: rgb(153, 148, 148);
 }
 
 body {
@@ -16,16 +17,14 @@ body {
 }
 
 header {
-    padding: 20px 35px;
-    margin-bottom: 30px;
+    padding: 11px 35px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    
+    top: 0;    
     z-index: 9999;
 }
 
@@ -64,12 +63,28 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+.hero {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("../images/hero.png");
+    background-size: cover;
+    background-position: center;   
+    background-attachment: fixed;
+    background-position: 80%; 
+    height: 250px;
+  }
+
 h2 {
     text-align: center;
+    color: var(--primary-color);
+    font-size: 30px;
 }
 
 section {
     padding: 60px;
+    background-color: var(--fourth-color);
 }
 p {
     color: var(--primary-color);
@@ -89,7 +104,11 @@ p {
 }
 
 .latestproject img{
+    margin: auto;
+    display: block;
     width: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .other-projects{
@@ -102,33 +121,66 @@ p {
 
 .projects {
     margin: 20px;
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
     color: var(--primary-color);
     flex: 1;
   }
 
+.projects img{
+    margin: auto;
+    display: block;
+}
+
+footer {
+    background-color: var(--fourth-color);
+}
+
+footer a {
+    color: var(--primary-color)
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+footer ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+
 
     /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-header {
-padding-bottom: 0;
-justify-content:center;
-position:relative;
+    header {
+    padding-bottom: 0;
+    justify-content:center;
+    position:relative;
 }
 
 header h1 {
-width: 100%;
-text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 header nav ul {
-margin-top: 20px;
-width: 100%;
-justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
 }
 
 header nav ul li a {
-font-size: 20px;
+    font-size: 20px;
+}
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -137,26 +189,7 @@ section {
 padding: 30px 15px;
 }
 
-.step h3 {
-flex: 1 100%;
-text-align: center;
-}
 
-.step-info {
-flex: 2 100%;
-text-align: center;
-justify-content: center;
-}
-
-.step-img {
-flex: 0 32%;
-margin-right: 0;
-margin-top: 15px;
-margin-bottom: 15px;
-}
-
-.step-text {
-flex: 100%;  
 }
 
 }
@@ -164,20 +197,8 @@ flex: 100%;
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
-.hero-form button {
-width: 100%;
-}
-
 .section-title {
 width: 95%;
-}
-
-.intro p {
-width: 100%;
-}
-
-.trainer {
-flex: 0 100%;
 }
 
 .contact-info {
@@ -190,4 +211,4 @@ flex: 0 100%;
 
 .contact-form {
 order: 3;
-}
+}}
