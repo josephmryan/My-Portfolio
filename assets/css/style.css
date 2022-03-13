@@ -17,6 +17,7 @@ body {
 
 header {
     padding: 20px 35px;
+    margin-bottom: 30px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
@@ -24,11 +25,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
+    
     z-index: 9999;
 }
 
@@ -71,6 +68,9 @@ h2 {
     text-align: center;
 }
 
+section {
+    padding: 60px;
+}
 p {
     color: var(--primary-color);
     vertical-align: center;
@@ -87,6 +87,26 @@ p {
 .about-content{
     float: right;
 }
+
+.latestproject img{
+    width: 70%;
+}
+
+.other-projects{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.projects {
+    margin: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    flex: 1;
+  }
+
 
     /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
