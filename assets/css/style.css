@@ -129,6 +129,8 @@ p {
 .projects img{
     margin: auto;
     display: block;
+    width: 593px;
+    padding-top: 26px;
 }
 
 footer {
